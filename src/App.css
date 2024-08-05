@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    filter: blur(3px);
+    background: url("https://i.pinimg.com/originals/b1/6d/90/b16d909fa4fbf4f57c549e8a956ae81c.jpg") no-repeat center / cover;
+}
+
+/* Hover for only supported device */
+@media (hover:hover) {
+    .opt:hover {
+        background-color: rgb(215 215 215);
+    }
+}
